@@ -14,7 +14,8 @@ KEYWORDS="x86"
 SLOT="0"
 
 DEPEND=">=media-sound/jack-audio-connection-kit-0.116.1
-	x11-libs/libX11"
+	x11-libs/libX11
+	x11-libs/libXext"
 
 src_install() {
 	make DESTDIR=${D} install || die
